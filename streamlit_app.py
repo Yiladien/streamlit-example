@@ -57,7 +57,9 @@ st.json(jsonData, expanded=False)
 
 jsonData2 = []
 for arr1 in jsonData:
+  print(arr1)
   info = arr1['info']
+  print(info)
   jsonData2.append(info)
 st.json(jsonData2, expanded=False)
 
