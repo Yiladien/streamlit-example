@@ -48,5 +48,5 @@ st.title('311 - City Services')
 st.header('ALL SERVICE CALLS')
 
 # with st.echo(code_location='below'):
-st.json(response_dict)
+st.json(response_dict.result)
           
