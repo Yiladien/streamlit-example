@@ -55,7 +55,10 @@ jsonData = []
 jsonData = response_dict['result']['fields']
 st.json(jsonData, expanded=False)
 
-  
+jsonData2 = []
+for arr1 in jsonData2:
+  info = ['info']
+  jsonData2.append(info)
 
 pd_object = pd.read_json(jsonData, typ='series')
 df = pd.DataFrame(pd_object)
