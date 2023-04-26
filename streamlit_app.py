@@ -40,7 +40,7 @@ In the meantime, below is an example of what you can do with just a few lines of
 import json
 import urllib.request
 # url = 'https://data.sanantonio.gov/api/3/action/datastore_search?resource_id=20eb6d22-7eac-425a-85c1-fdb365fd3cd7&limit=5&q=title:jones'  
-url = 'https://data.sanantonio.gov/api/3/action/datastore_search'
+url = 'https://data.sanantonio.gov/dataset/93b0e7ee-3a55-4aa9-b27b-d1817e91aec3/resource/20eb6d22-7eac-425a-85c1-fdb365fd3cd7/download/allservicecalls.csv'
 fileobj = urllib.request.urlopen(url)
 response_dict = json.loads(fileobj.read())
 # print(response_dict)
