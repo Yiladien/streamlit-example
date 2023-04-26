@@ -72,7 +72,7 @@ df = pd.DataFrame(jsonData2)
 st.dataframe(df)
 st.experimental_data_editor(df)
 df2 = df.groupby(['Category'])['Category'].count()
-st.table(df2[0])
+st.table(df2['Category'])
 # st.bar_chart(df2, x=None, y=None)
 
 
