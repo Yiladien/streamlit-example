@@ -44,6 +44,8 @@ fileobj = urllib.request.urlopen(url)
 response_dict = json.loads(fileobj.read())
 # print(response_dict)
 
+st.title('311 - City Services - ALL SERVICE CALLS')
+
 # with st.echo(code_location='below'):
 st.json(response_dict)
           
