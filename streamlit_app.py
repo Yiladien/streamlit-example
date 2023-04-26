@@ -73,7 +73,7 @@ st.dataframe(df)
 st.experimental_data_editor(df)
 df2 = df.groupby(['Category'])['Category'].count()
 st.table(df2)
-st.bar_chart(df2, x="0", y="0")
+st.bar_chart(df2, x=0, y=None)
 
 
 import numpy as np
