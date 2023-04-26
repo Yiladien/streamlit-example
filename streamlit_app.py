@@ -39,6 +39,7 @@ In the meantime, below is an example of what you can do with just a few lines of
 
 import json
 import urllib.request
+
 url = 'https://data.sanantonio.gov/api/3/action/datastore_search?resource_id=20eb6d22-7eac-425a-85c1-fdb365fd3cd7&limit=100'  
 fileobj = urllib.request.urlopen(url)
 response_dict = json.loads(fileobj.read())
@@ -69,3 +70,4 @@ st.json(jsonData2, expanded=False)
 df = pd.DataFrame(jsonData2)
 st.dataframe(df)
 st.experimental_data_editor(df)
+st.bar_chart(df, x="OPENEDDATETIME", y="CATEGORY")
