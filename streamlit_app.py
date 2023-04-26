@@ -48,7 +48,7 @@ st.title('311 - City Services')
 st.header('ALL SERVICE CALLS')
 
 # with st.echo(code_location='below'):
-st.json(response_dict, *, expanded=False)
+st.json(response_dict, expanded=False)
 
 pd_object = pd.read_json(response_dict, typ='series')
 df = pd.DataFrame(pd_object)
