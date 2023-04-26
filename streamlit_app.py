@@ -52,3 +52,4 @@ st.json(response_dict, expanded=False)
 
 pd_object = pd.read_json(response_dict, typ='series')
 df = pd.DataFrame(pd_object)
+st.dataframe(df)
