@@ -50,18 +50,18 @@ st.header('ALL SERVICE CALLS')
 # with st.echo(code_location='below'):
 st.json(response_dict, expanded=False)
 
-jsonData = []
-
-jsonData = response_dict['result']['fields']
-st.json(jsonData, expanded=False)
-
 jsonData2 = []
-for arr1 in jsonData:
-  try:
-    info = arr1['info']
-    jsonData2.append(info)
-  except KeyError:
-    pass
+
+jsonData2 = response_dict['result']['records']
+# st.json(jsonData, expanded=False)
+
+# jsonData2 = []
+# for arr1 in jsonData:
+#   try:
+#     info = arr1['info']
+#     jsonData2.append(info)
+#   except KeyError:
+#     pass
     
 st.json(jsonData2, expanded=False)
 
