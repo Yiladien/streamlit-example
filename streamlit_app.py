@@ -57,10 +57,12 @@ st.json(jsonData, expanded=False)
 
 jsonData2 = []
 for arr1 in jsonData:
-  st.json(arr1, expanded=False)
-#   info = arr1['info']
-#   print(info)
-#   jsonData2.append(info)
+  try:
+    info = arr1['info']
+    jsonData2.append(info)
+  except KeyError:
+    pass
+    
 st.json(jsonData2, expanded=False)
 
 # pd_object = pd.read_json(jsonData2, typ='series')
