@@ -50,6 +50,12 @@ st.header('ALL SERVICE CALLS')
 # with st.echo(code_location='below'):
 st.json(response_dict, expanded=False)
 
-pd_object = pd.read_json(response_dict[result][fields][info], typ='series')
+jsonData = []
+
+jsonData = response_dict['result']['fields']
+
+  
+
+pd_object = pd.read_json(jsonData, typ='series')
 df = pd.DataFrame(pd_object)
 st.dataframe(df)
