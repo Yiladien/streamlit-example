@@ -42,5 +42,8 @@ import urllib.request
 url = 'https://data.sanantonio.gov/api/3/action/datastore_search?resource_id=20eb6d22-7eac-425a-85c1-fdb365fd3cd7&limit=5&q=title:jones'  
 fileobj = urllib.request.urlopen(url)
 response_dict = json.loads(fileobj.read())
-print(response_dict)
+# print(response_dict)
+
+# with st.echo(code_location='below'):
+st.json(response_dict)
           
