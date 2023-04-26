@@ -67,5 +67,5 @@ st.json(jsonData2, expanded=False)
 
 # pd_object = pd.read_json(jsonData2, typ='series')
 df = pd.DataFrame(jsonData2)
-st.dataframe(df)
-st.experimental_data_editor(df)
+st.dataframe(df, user_container_width=True)
+st.experimental_data_editor(df, user_container_width=True)
