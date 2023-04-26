@@ -54,6 +54,7 @@ st.json(response_dict, expanded=False)
 jsonData2 = []
 
 jsonData2 = response_dict['result']['records']
+
 # st.json(jsonData, expanded=False)
 
 # jsonData2 = []
@@ -70,4 +71,4 @@ st.json(jsonData2, expanded=False)
 df = pd.DataFrame(jsonData2)
 st.dataframe(df)
 st.experimental_data_editor(df)
-st.bar_chart(df, x="OPENEDDATETIME", y="Category")
+st.bar_chart(df.groupby(['Category']).['Category'].count(), x="Category", y="Category")
