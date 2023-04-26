@@ -56,7 +56,7 @@ jsonData = response_dict['result']['fields']
 st.json(jsonData, expanded=False)
 
 jsonData2 = []
-for arr1 in jsonData2:
+for arr1 in jsonData:
   info = ['info']
   jsonData2.append(info)
 st.json(jsonData2, expanded=False)
