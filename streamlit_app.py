@@ -53,6 +53,7 @@ st.json(response_dict, expanded=False)
 jsonData = []
 
 jsonData = response_dict['result']['fields']
+st.json(jsonData, expanded=False)
 
   
 
