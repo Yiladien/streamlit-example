@@ -59,6 +59,7 @@ jsonData2 = []
 for arr1 in jsonData2:
   info = ['info']
   jsonData2.append(info)
+st.json(jsonData2, expanded=False)
 
 pd_object = pd.read_json(jsonData, typ='series')
 df = pd.DataFrame(pd_object)
